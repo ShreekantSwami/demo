@@ -1,5 +1,2 @@
-NODE_MODULES
-dbConnection.js
-tailwind.config.js
 package.json
 package-lock.json
