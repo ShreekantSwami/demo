@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    *::-webkit-inner-spin-button {
+      display: none;
+    }
+  </style>
+  <body class="w-screen h-screen flex justify-center items-center">
+    <form
+      action="/register"
+      method="post"
+      class="h-1/2 w-1/2 flex flex-col gap-5 justify-center items-center"
+    >
+      <h1 class="text-5xl">Registration</h1>
+      <input
+        type="text"
+        name="username"
+        placeholder="Enter your username"
+        class="input input-bordered w-full max-w-xs py-5 px-3 focus:text-2xl"
+        required
+      />
+      <input
+        type="email"
+        placeholder="Enter your Email"
+        name="email"
+        class="input input-bordered w-full max-w-xs py-5 px-3 focus:text-2xl"
+        required
+      />
+      <input
+        type="tel"
+        name="mob"
+        placeholder="Enter your Contact Number"
+        class="input input-bordered w-full max-w-xs py-5 px-3 focus:text-2xl"
+        required
+      />
+      <button type="submit" class="btn text-2xl font-light hover:font-bold">
+        Register
+      </button>
+    </form>
+  </body>
+</html>
